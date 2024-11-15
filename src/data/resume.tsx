@@ -4,12 +4,12 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Gideon Adeti",
   initials: "GA",
-  url: "https://gideonadeti-portfolio.vercel.app/",
+  url: "https://gideonadeti.vercel.app/",
   location: "Koforidua, Eastern, Ghana",
   locationLink: "https://www.google.com/maps/place/koforidua",
-  description: "Full-stack web developer specializing in backend development",
+  description: "Web Developer",
   summary:
-    "I'm skilled in building web applications with Express.js (backend), React.js (frontend), and Next.js (full-stack), utilizing PostgreSQL or MongoDB as databases.",
+    "With over a year of experience, I develop web applicationlications using Next.js (front-end or full-stack) and Express.js (back-end), utilizing either PostgreSQL or MongoDB as databases. I create responsive front-ends and secure back-ends, connecting them with RESTful APIs. I prioritize clean, maintainable code and strive to meet project requirements on time. I am disciplined, efficient, and dedicated to delivering scalable, modern solutions. Let’s work together to bring your ideas to life!",
   avatarUrl: "/me.jpg",
   skills: [
     "HTML",
@@ -26,6 +26,8 @@ export const DATA = {
     "PostgreSQL",
     "Git",
     "GitHub",
+    "Jest",
+    "React Testing Library",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -65,49 +67,41 @@ export const DATA = {
       href: "",
       badges: [],
       location: "Remote",
-      title: "Frontend Web Developer",
+      title: "Front-end Web Developer",
       logoUrl: "/storedash.png",
       start: "Aug 2024",
       end: "Present",
       description:
-        "Created StoreDash landing page and web app using Next.js. Implemented user management functionality within StoreDash Admin Dashboard. Enhanced existing codebase, resulting in better maintainability. Applied responsive design principles for enhanced user accessibility across devices. Presented project updates to the project manager, highlighting progress and new features",
+        "Developed features that met project requirements, created and styled components to align with Figma designs, and ensured responsiveness across various devices. Utilized Shadcn UI to streamline development and maintain a consistent design. Communicated with the back end using React Query, Axios, and RESTful APIs. Employed Git and GitHub for version control and collaborated with the team on code reviews and bug fixes.",
     },
     {
       company: "Upwork",
       href: "https://www.upwork.com/freelancers/~017021c12ff4a311c3?mp_source=share",
       badges: [],
       location: "Remote",
-      title: "Full-Stack Web Developer",
+      title: "Web Developer",
       logoUrl: "/upwork.png",
       start: "Nov 2024",
       end: "Present",
-      description: "I work as a freelance full-stack web developer on Upwork",
+      description: "Freelance on Upwork",
     },
   ],
   education: [
-    {
-      school: "FreeCodeCamp",
-      href: "https://freecodecamp.org",
-      degree: "Web Development",
-      logoUrl: "/fcc.png",
-      start: "2023",
-      end: "2024",
-    },
     {
       school: "The Odin Project",
       href: "https://theodinproject.com",
       degree: "Web Development",
       logoUrl: "/top.png",
-      start: "2024",
-      end: "2024",
+      start: "Mar 2024",
+      end: "Jun 2024",
     },
     {
-      school: "All Nations University",
-      href: "https://anu.edu.gh/",
-      degree: "Bachelor of Engineering in Biomedical Engineering.",
-      logoUrl: "/anu.png",
-      start: "2024",
-      end: "2028",
+      school: "FreeCodeCamp",
+      href: "https://freecodecamp.org",
+      degree: "Web Development",
+      logoUrl: "/fcc.png",
+      start: "Nov 2023",
+      end: "Mar 2024",
     },
   ],
   projects: [
@@ -149,8 +143,7 @@ export const DATA = {
       href: "https://gideonadeti-task-manager.vercel.app/",
       dates: "Sep 2024 - Oct 2024",
       active: true,
-      description:
-        "A web app for managing tasks.",
+      description: "A web application for managing tasks.",
       technologies: [
         "TypeScript",
         "Next.js",
@@ -182,8 +175,7 @@ export const DATA = {
       href: "https://gideonadeti-weather-app.vercel.app/",
       dates: "Oct 2024 - Oct 2024",
       active: true,
-      description:
-        "A web app for searching for the weather in a city. Features include ability to toggle between different units and modes (dark, light)",
+      description: "A web application for searching for the weather in a city.",
       technologies: [
         "TypeScript",
         "Next.js",
@@ -212,7 +204,7 @@ export const DATA = {
       href: "https://gideonadeti-markdown-previewer.netlify.app/",
       dates: "Oct 2024 - Oct 2024",
       active: true,
-      description: "A web app for writing and previewing markdowns.",
+      description: "A web application for writing and previewing markdowns.",
       technologies: ["TypeScript", "React", "Bootstrap", "Git & GitHub"],
       links: [
         {
