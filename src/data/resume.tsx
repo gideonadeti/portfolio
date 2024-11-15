@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/koforidua",
   description: "Web Developer",
   summary:
-    "With over a year of experience, I develop web applicationlications using Next.js (front-end or full-stack) and Express.js (back-end), utilizing either PostgreSQL or MongoDB as databases. I create responsive front-ends and secure back-ends, connecting them with RESTful APIs. I prioritize clean, maintainable code and strive to meet project requirements on time. I am disciplined, efficient, and dedicated to delivering scalable, modern solutions. Let’s work together to bring your ideas to life!",
+    "I have experience developing web applications with Next.js (front-end or full-stack) and Express.js (back-end), using PostgreSQL or MongoDB for databases. I build responsive front-ends and secure back-ends, integrating them with RESTful APIs. I write clean, maintainable code and strive to meet project deadlines. Let's work together to bring your ideas to life!",
   avatarUrl: "/me.jpg",
   skills: [
     "HTML",
@@ -72,7 +72,7 @@ export const DATA = {
       start: "Aug 2024",
       end: "Present",
       description:
-        "Developed features that met project requirements, created and styled components to align with Figma designs, and ensured responsiveness across various devices. Utilized Shadcn UI to streamline development and maintain a consistent design. Communicated with the back end using React Query, Axios, and RESTful APIs. Employed Git and GitHub for version control and collaborated with the team on code reviews and bug fixes.",
+        "Developed and styled UI components to match Figma designs. Ensured responsiveness across desktops, tablets, and smartphones. Integrated front-end with back-end using React Query and Axios. Collaborated with the team using Git and GitHub.",
     },
     {
       company: "Upwork",
