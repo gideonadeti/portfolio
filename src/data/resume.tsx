@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/koforidua",
   description: "Web Developer",
   summary:
-    "I have experience developing web apps with Next.js (front-end or full-stack) and Express.js (back-end), using PostgreSQL or MongoDB for databases.",
+    "Self-taught web developer with experience in building web applications using Next.js (front-end or full-stack) and Express.js (back-end), along with PostgreSQL or MongoDB for databases.",
   avatarUrl: "/me.jpg",
   skills: [
     "TypeScript",
@@ -68,18 +68,7 @@ export const DATA = {
       location: "Remote",
       title: "Front-end Web Developer",
       logoUrl: "/storedash.png",
-      start: "Aug 2024",
-      end: "Present",
-      description: "",
-    },
-    {
-      company: "Upwork",
-      href: "https://www.upwork.com/fl/gideonadeti?mp_source=share",
-      badges: [],
-      location: "Remote",
-      title: "Web Developer",
-      logoUrl: "/upwork.png",
-      start: "Nov 2024",
+      start: "Sep 2024",
       end: "Present",
       description: "",
     },
@@ -90,7 +79,7 @@ export const DATA = {
       href: "https://theodinproject.com",
       degree: "Web Development",
       logoUrl: "/top.png",
-      start: "Mar 2024",
+      start: "Apr 2024",
       end: "Jun 2024",
     },
     {
@@ -98,8 +87,8 @@ export const DATA = {
       href: "https://freecodecamp.org",
       degree: "Web Development",
       logoUrl: "/fcc.png",
-      start: "Nov 2023",
-      end: "Mar 2024",
+      start: "Jan 2023",
+      end: "Apr 2024",
     },
   ],
   projects: [
@@ -113,13 +102,9 @@ export const DATA = {
       technologies: [
         "TypeScript",
         "Next.js",
-        "PostgreSQL",
-        "Prisma ORM",
-        "Clerk",
-        "Tailwind CSS",
         "Shadcn UI",
-        "React Query & Axios",
-        "Git & GitHub",
+        "Tailwind CSS",
+        "PostgreSQL",
       ],
       links: [
         {
@@ -145,13 +130,9 @@ export const DATA = {
       technologies: [
         "TypeScript",
         "Next.js",
-        "PostgreSQL",
-        "Prisma ORM",
-        "Clerk",
-        "Tailwind CSS",
         "Shadcn UI",
-        "React Query & Axios",
-        "Git & GitHub",
+        "Tailwind CSS",
+        "PostgreSQL",
       ],
       links: [
         {
@@ -174,14 +155,7 @@ export const DATA = {
       dates: "Oct 2024 - Oct 2024",
       active: true,
       description: "A web application for searching for the weather in a city.",
-      technologies: [
-        "TypeScript",
-        "Next.js",
-        "Tailwind CSS",
-        "Shadcn UI",
-        "React Query & Axios",
-        "Git & GitHub",
-      ],
+      technologies: ["TypeScript", "Next.js", "Shadcn UI", "Tailwind CSS"],
       links: [
         {
           type: "Website",
@@ -203,7 +177,7 @@ export const DATA = {
       dates: "Oct 2024 - Oct 2024",
       active: true,
       description: "A web application for writing and previewing markdowns.",
-      technologies: ["TypeScript", "React", "Bootstrap", "Git & GitHub"],
+      technologies: ["TypeScript", "React", "Bootstrap"],
       links: [
         {
           type: "Website",
