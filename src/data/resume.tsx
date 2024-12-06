@@ -11,23 +11,7 @@ export const DATA = {
   summary:
     "Self-taught web developer with experience in building web applications using Next.js (front-end or full-stack) and Express.js (back-end), along with PostgreSQL or MongoDB for databases.",
   avatarUrl: "/me.jpg",
-  skills: [
-    "TypeScript",
-    "Next.js",
-    "Shadcn UI",
-    "Tailwind CSS",
-    "Express.js",
-    "PostgreSQL",
-    "MongoDB",
-    "Git",
-    "GitHub",
-    "Vitest",
-    "React Testing Library",
-    "Playwright",
-    "Axios",
-    "React Query",
-    "Clerk",
-  ],
+  skills: ["TypeScript", "Next.js", "Express.js", "PostgreSQL", "MongoDB"],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
@@ -66,7 +50,7 @@ export const DATA = {
       href: "",
       badges: [],
       location: "Remote",
-      title: "Front-end Web Developer",
+      title: "Web Developer",
       logoUrl: "/storedash.png",
       start: "Sep 2024",
       end: "Present",
@@ -93,19 +77,35 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Personal Library",
+      href: "https://gideonadeti-personal-library.vercel.app/",
+      dates: "Nov 2024 - Dec 2024",
+      active: true,
+      description: "A web application that helps you manage your books",
+      technologies: ["TypeScript", "Next.js", "Express.js", "PostgreSQL"],
+      links: [
+        {
+          type: "Website",
+          href: "https://gideonadeti-personal-library.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/gideonadeti/personal-library",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/personal-library.png",
+      video: "",
+    },
+    {
       title: "Event Timer",
       href: "https://gideonadeti-event-timer.vercel.app/",
       dates: "Nov 2024 - Nov 2024",
       active: true,
       description:
         "A web application for setting countdowns to future events and count-ups from past events.",
-      technologies: [
-        "TypeScript",
-        "Next.js",
-        "Shadcn UI",
-        "Tailwind CSS",
-        "PostgreSQL",
-      ],
+      technologies: ["TypeScript", "Next.js", "PostgreSQL"],
       links: [
         {
           type: "Website",
@@ -127,13 +127,7 @@ export const DATA = {
       dates: "Sep 2024 - Oct 2024",
       active: true,
       description: "A web application for managing tasks.",
-      technologies: [
-        "TypeScript",
-        "Next.js",
-        "Shadcn UI",
-        "Tailwind CSS",
-        "PostgreSQL",
-      ],
+      technologies: ["TypeScript", "Next.js", "PostgreSQL"],
       links: [
         {
           type: "Website",
@@ -147,50 +141,6 @@ export const DATA = {
         },
       ],
       image: "/task-manager.png",
-      video: "",
-    },
-    {
-      title: "Weather App",
-      href: "https://gideonadeti-weather-app.vercel.app/",
-      dates: "Oct 2024 - Oct 2024",
-      active: true,
-      description: "A web application for searching for the weather in a city.",
-      technologies: ["TypeScript", "Next.js", "Shadcn UI", "Tailwind CSS"],
-      links: [
-        {
-          type: "Website",
-          href: "https://gideonadeti-weather-app.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/gideonadeti/weather-app",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/weather-app.png",
-      video: "",
-    },
-    {
-      title: "Markdown Previewer",
-      href: "https://gideonadeti-markdown-previewer.netlify.app/",
-      dates: "Oct 2024 - Oct 2024",
-      active: true,
-      description: "A web application for writing and previewing markdowns.",
-      technologies: ["TypeScript", "React", "Bootstrap"],
-      links: [
-        {
-          type: "Website",
-          href: "https://gideonadeti-markdown-previewer.netlify.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/gideonadeti/markdown-previewer",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/markdown-previewer.png",
       video: "",
     },
   ],
