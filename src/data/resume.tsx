@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/koforidua",
   description: "Web Application Developer",
   summary:
-    "I'm a self-taught web application developer skilled in building web applications using technologies like TypeScript, Next.js, Express.js, PostgreSQL, and MongoDB. I'm proficient in both front-end and back-end development, with a preference for the latter. I utilized various free online resources to learn and gained experience through hands-on practice, as well as personal and collaborative projects.",
+    "I'm a self-taught web application developer skilled in building web applications using technologies like TypeScript, Next.js, Express.js, PostgreSQL, and MongoDB. I'm proficient in front-end and back-end development, with a preference for the latter. I utilize various free resources to learn and gain experience through hands-on practice, as well as personal and collaborative projects.",
   avatarUrl: "/me.jpg",
   skills: [
     "TypeScript",
