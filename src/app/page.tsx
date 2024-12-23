@@ -48,7 +48,7 @@ export default function Page() {
           </Markdown>
         </BlurFade>
       </section>
-      <section id="work">
+      {/* <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Work Experience</h2>
@@ -72,8 +72,8 @@ export default function Page() {
             </BlurFade>
           ))}
         </div>
-      </section>
-      <section id="education">
+      </section> */}
+      {/* <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <h2 className="text-xl font-bold">Education</h2>
@@ -95,7 +95,7 @@ export default function Page() {
             </BlurFade>
           ))}
         </div>
-      </section>
+      </section> */}
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>

@@ -7,11 +7,26 @@ export const DATA = {
   url: "https://gideonadeti.vercel.app/",
   location: "Koforidua, Eastern, Ghana",
   locationLink: "https://www.google.com/maps/place/koforidua",
-  description: "Web Developer",
+  description: "Web Application Developer",
   summary:
-    "Self-taught web developer with experience in building web applications using Next.js (front-end or full-stack) and Express.js (back-end), along with PostgreSQL or MongoDB for databases.",
+    "I'm a self-taught web application developer skilled in building web applications using technologies like TypeScript, Next.js, Express.js, PostgreSQL, and MongoDB. I'm proficient in both front-end and back-end development, with a preference for the latter. I utilized various free online resources to learn and gained experience through hands-on practice, as well as personal and collaborative projects.",
   avatarUrl: "/me.jpg",
-  skills: ["TypeScript", "Next.js", "Express.js", "PostgreSQL", "MongoDB"],
+  skills: [
+    "TypeScript",
+    "Next.js",
+    "Shadcn UI",
+    "Tailwind CSS",
+    "Zustand",
+    "React Query",
+    "Axios",
+    "Express.js",
+    "Redis",
+    "PostgreSQL",
+    "MongoDB",
+    "Prisma ORM",
+    "Vitest",
+    "Playwright",
+  ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
@@ -44,45 +59,27 @@ export const DATA = {
     },
   },
 
-  work: [
-    {
-      company: "StoreDash",
-      href: "",
-      badges: [],
-      location: "Remote",
-      title: "Web Developer",
-      logoUrl: "/storedash.png",
-      start: "Sep 2024",
-      end: "Present",
-      description: "",
-    },
-  ],
-  education: [
-    {
-      school: "The Odin Project",
-      href: "https://theodinproject.com",
-      degree: "Web Development",
-      logoUrl: "/top.png",
-      start: "Apr 2024",
-      end: "Jun 2024",
-    },
-    {
-      school: "FreeCodeCamp",
-      href: "https://freecodecamp.org",
-      degree: "Web Development",
-      logoUrl: "/fcc.png",
-      start: "Jan 2023",
-      end: "Apr 2024",
-    },
-  ],
+  work: [],
+  education: [],
   projects: [
     {
       title: "Personal Library",
       href: "https://gideonadeti-personal-library.vercel.app/",
       dates: "Nov 2024 - Dec 2024",
       active: true,
-      description: "A web application that helps you manage your books",
-      technologies: ["TypeScript", "Next.js", "Express.js", "PostgreSQL"],
+      description: "A web application for managing books.",
+      technologies: [
+        "TypeScript",
+        "Next.js",
+        "Shadcn UI",
+        "Tailwind CSS",
+        "React Query",
+        "Axios",
+        "Express.js",
+        "Redis",
+        "PostgreSQL",
+        "Prisma ORM",
+      ],
       links: [
         {
           type: "Website",
@@ -105,7 +102,16 @@ export const DATA = {
       active: true,
       description:
         "A web application for setting countdowns to future events and count-ups from past events.",
-      technologies: ["TypeScript", "Next.js", "PostgreSQL"],
+      technologies: [
+        "TypeScript",
+        "Next.js",
+        "Shadcn UI",
+        "Tailwind CSS",
+        "React Query",
+        "Axios",
+        "PostgreSQL",
+        "Prisma ORM",
+      ],
       links: [
         {
           type: "Website",
@@ -127,7 +133,16 @@ export const DATA = {
       dates: "Sep 2024 - Oct 2024",
       active: true,
       description: "A web application for managing tasks.",
-      technologies: ["TypeScript", "Next.js", "PostgreSQL"],
+      technologies: [
+        "TypeScript",
+        "Next.js",
+        "Shadcn UI",
+        "Tailwind CSS",
+        "React Query",
+        "Axios",
+        "PostgreSQL",
+        "Prisma ORM",
+      ],
       links: [
         {
           type: "Website",
