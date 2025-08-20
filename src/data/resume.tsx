@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/koforidua",
   description: "Full-Stack Web Developer",
   summary:
-    "Hi there! I'm a Full-Stack Developer experienced in building, deploying, and maintaining web applications using technologies like NestJS, Next.js, PostgreSQL, MongoDB, Docker, and AWS. I specialize in backend, am proficient in frontend, and have a solid foundation in DevOps.",
+    "I'm a Full-Stack Developer experienced in building, deploying, and maintaining web applications using technologies like NestJS, Next.js, PostgreSQL, MongoDB, Docker, and AWS. I specialize in backend, am proficient in frontend, and have a solid foundation in DevOps.",
   avatarUrl: "https://avatars.githubusercontent.com/u/178742105",
   skills: [
     "TypeScript",
