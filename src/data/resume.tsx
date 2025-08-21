@@ -7,9 +7,9 @@ export const DATA = {
   url: "https://gideonadeti.vercel.app",
   location: "Koforidua, Eastern Region, Ghana",
   locationLink: "https://www.google.com/maps/place/koforidua",
-  description: "Full-Stack Web Developer",
+  description: "Full-Stack Engineer",
   summary:
-    "I'm a Full-Stack Developer experienced in building, deploying, and maintaining web applications using technologies like NestJS, Next.js, PostgreSQL, MongoDB, Docker, and AWS. I specialize in backend, am proficient in frontend, and have a solid foundation in DevOps.",
+    "I'm a Full-Stack Engineer experienced in designing, building, deploying, and maintaining web applications using technologies like NestJS, Next.js, PostgreSQL, MongoDB, Docker, and AWS. I specialize in backend, am proficient in frontend, and have a solid foundation in DevOps.",
   avatarUrl: "https://avatars.githubusercontent.com/u/178742105",
   skills: [
     "TypeScript",
