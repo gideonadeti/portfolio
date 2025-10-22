@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/koforidua",
   description: "Full-Stack Software Engineer",
   summary:
-    "I'm a Full-Stack Software Engineer experienced in designing, building, deploying, and maintaining web applications using technologies like NestJS, Next.js, PostgreSQL, MongoDB, Docker, and AWS. I specialize in backend, am proficient in frontend, and have a solid foundation in DevOps.",
+    "I'm a self-taught, backend-leaning Full-Stack Software Engineer experienced in designing, building, deploying, and maintaining web applications using technologies like NestJS, Next.js, PostgreSQL, MongoDB, Docker, and AWS.",
   avatarUrl: "https://avatars.githubusercontent.com/u/178742105",
   skills: [
     "TypeScript",
@@ -104,8 +104,7 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Full-Stack Developer",
-      logoUrl:
-        "https://media.licdn.com/dms/image/v2/D4D0BAQGZvxAauw_4TA/company-logo_200_200/company-logo_200_200/0/1736004459142/exinn_digital_technology_logo?e=1758153600&v=beta&t=0akSB6X2ztNP5Tm6FdQRNclshh8uSdd5fqz29ZkfnWA",
+      logoUrl: "/exinn.png",
       start: "Jan 2025",
       end: "Mar 2025",
       description:
@@ -117,8 +116,7 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Web Developer",
-      logoUrl:
-        "https://media.licdn.com/dms/image/v2/C560BAQHQHYD8NNYczg/company-logo_200_200/company-logo_200_200/0/1631365774042?e=1758153600&v=beta&t=Ez5uxTyrQ2SbzWFHCMMPVuwH4OwpGQZVr2yWY9a_K88",
+      logoUrl: "/upg-llc.png",
       start: "Dec 2024",
       end: "Feb 2025",
       description:
@@ -130,8 +128,7 @@ export const DATA = {
       school: "Developer Roadmaps",
       href: "https://roadmap.sh",
       degree: "Software Engineering",
-      logoUrl:
-        "https://media.licdn.com/dms/image/v2/C4D0BAQHoK9C7cm1dJA/company-logo_200_200/company-logo_200_200/0/1654163121594?e=1758153600&v=beta&t=wu98nQ7fcIgu6nQEW4P4n7nfUDwpHsPmmL8dvTh5BuA",
+      logoUrl: "/developer-roadmaps.png",
       start: "Sep 2024",
       end: "Dec 2024",
     },
