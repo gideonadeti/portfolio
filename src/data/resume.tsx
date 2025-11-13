@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/koforidua",
   description: "Full-Stack Software Engineer",
   summary:
-    "I'm a self-taught, backend-leaning Full-Stack Software Engineer experienced in designing, building, deploying, and maintaining web applications using technologies like NestJS, Next.js, PostgreSQL, MongoDB, Docker, and AWS.",
+    "I'm a self-taught, backend-leaning Full-Stack Software Engineer with experience in designing, developing, deploying, and maintaining web applications using technologies such as NestJS, Next.js, PostgreSQL, MongoDB, Docker, and AWS.",
   avatarUrl: "https://avatars.githubusercontent.com/u/178742105",
   skills: [
     "TypeScript",
@@ -47,7 +47,7 @@ export const DATA = {
     "Express.js",
     "Sass",
     "Bootstrap",
-    "React.js",
+    "React",
     "SQL",
     "SQLite",
     "Firebase",
