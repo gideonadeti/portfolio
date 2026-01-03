@@ -163,11 +163,11 @@ export const DATA = {
   projects: [
     {
       title: "REEN",
-      href: "https://reen-commerce.vercel.app",
+      href: "",
       dates: "May 2025 - Jul 2025",
-      active: true,
+      active: false,
       description:
-        "REEN is an e-commerce platform where users can buy, sell, and manage dummy products. It’s inspired by one of the advanced projects from the Backend roadmap on Developer Roadmaps. I built it to strengthen my backend development skills with NestJS and to demonstrate my ability to develop sophisticated, modern full-stack applications with a robust backend architecture and an intuitive frontend.",
+        "REEN is an e-commerce platform where users can buy, sell, and manage their products. It’s inspired by one of the advanced projects from the Backend roadmap on Developer Roadmaps. I built it to strengthen my backend development skills with NestJS and to demonstrate my ability to engineer sophisticated, modern full-stack applications with a robust backend architecture and an intuitive frontend.",
       technologies: [
         "TypeScript",
         "NestJS",
@@ -202,12 +202,12 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Image Processing Service",
-      href: "https://image-processing-service-nb06.onrender.com/api/documentation",
+      title: "Bildtransformator",
+      href: "https://bildtransformator.vercel.app",
       dates: "Apr 2025 - May 2025",
       active: true,
       description:
-        "Image Processing Service is a backend system similar to Cloudinary that allows users to upload images, apply transformations, and view or download the results. It’s one of the intermediate projects from the Backend roadmap on Developer Roadmaps. I built it to strengthen my backend development skills with NestJS and to demonstrate my ability to build high-performance, event-driven server-side applications with asynchronous processing, efficient caching, and real-time updates.",
+        "Bildtransformator is an image processing platform similar to Cloudinary that allows users to upload, transform, manage, and share images. Originally built as a backend-only system inspired by one of the intermediate projects from the Backend roadmap on Developer Roadmaps, I expanded it into a complete full-stack application to demonstrate my ability to engineer production-ready, scalable web applications with modern technologies.",
       technologies: [
         "TypeScript",
         "NestJS",
@@ -220,12 +220,19 @@ export const DATA = {
         "Prisma ORM",
         "Redis",
         "Amazon S3",
+        "Cloudinary",
+        "Next.js",
+        "TanStack Query",
+        "Axios",
+        "Zustand",
+        "Shadcn UI",
+        "Tailwind CSS",
         "Postman",
       ],
       links: [
         {
           type: "Website",
-          href: "https://image-processing-service-nb06.onrender.com/api/documentation",
+          href: "https://bildtransformator.vercel.app",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -234,7 +241,75 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/images/image-processing-service.jpeg",
+      image: "/images/bildtransformator.png",
+      video: "",
+    },
+    {
+      title: "Moviereserv",
+      href: "https://moviereserv.vercel.app",
+      dates: "May 2025 - May 2025",
+      active: true,
+      description:
+        "Moviereserv is a movie reservation platform that allows users to browse movies, view showtimes, reserve seats, and manage their bookings. Originally built as a backend-only system inspired by one of the advanced projects from the Backend roadmap on Developer Roadmaps, I expanded it into a complete full-stack application to demonstrate my ability to engineer production-ready web applications with complex business logic, strict data integrity rules, and role-based access controls.",
+      technologies: [
+        "TypeScript",
+        "NestJS",
+        "Passport.js",
+        "JWT",
+        "PostgreSQL",
+        "Prisma ORM",
+        "Next.js",
+        "TanStack Query",
+        "Zustand",
+        "Axios",
+        "Tailwind CSS",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://moviereserv.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/gideonadeti/movie-reservation-system",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/images/moviereserv.png",
+      video: "",
+    },
+    {
+      title: "Taskflow",
+      href: "https://gideonadeti-taskflow.vercel.app",
+      dates: "Oct 2024 - Nov 2024",
+      active: true,
+      description:
+        "Taskflow is a modern task management application that allows users to organize, track, and manage their tasks efficiently. Originally inspired by The Odin Project's Todo List project, I continuously evolved it through multiple iterations—from localStorage to PostgreSQL with Prisma ORM, and now into a feature-rich productivity platform—to demonstrate my ability to engineer scalable, user-centric web applications with advanced features and modern best practices.",
+      technologies: [
+        "TypeScript",
+        "Clerk",
+        "Next.js",
+        "Shadcn UI",
+        "Tailwind CSS",
+        "PostgreSQL",
+        "Prisma ORM",
+        "TanStack Query",
+        "Axios",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://gideonadeti-taskflow.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/gideonadeti/taskflow",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/images/taskflow.png",
       video: "",
     },
     {
@@ -274,73 +349,17 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Movie Reservation System",
-      href: "https://movie-reservation-system.onrender.com/api/documentation",
-      dates: "May 2025 - May 2025",
-      active: true,
-      description:
-        "Movie Reservation System is a backend system that allows users to authenticate, browse movies, reserve seats for specific showtimes, and manage their reservations. It’s one of the advanced projects from the Backend roadmap on Developer Roadmaps. I built it to strengthen my backend development skills with NestJS and to demonstrate my ability to build robust server-side applications with complex business logic, strict data integrity rules, and role-based access controls.",
-      technologies: ["TypeScript", "NestJS", "PostgreSQL", "Prisma ORM"],
-      links: [
-        {
-          type: "Website",
-          href: "https://movie-reservation-system.onrender.com/api/documentation",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/gideonadeti/movie-reservation-system",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/images/movie-reservation-system.jpeg",
-      video: "",
-    },
-    {
-      title: "Task Manager",
-      href: "https://gideonadeti-task-manager.vercel.app",
-      dates: "Oct 2024 - Nov 2024",
-      active: true,
-      description:
-        "Task Manager is a full-stack application built as a portfolio project, extending beyond The Odin Project’s Todo List project to demonstrate advanced web development skills. I created it using modern technologies like Next.js with TypeScript for full-stack development, PostgreSQL via Prisma ORM for persistent storage (replacing a previous localStorage implementation), and Clerk for secure authentication and user management. The project is deployed on Vercel for fast, seamless hosting with CI/CD integration.",
-      technologies: [
-        "TypeScript",
-        "Clerk",
-        "Next.js",
-        "Shadcn UI",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Prisma ORM",
-        "TanStack Query",
-        "Axios",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://gideonadeti-task-manager.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/gideonadeti/task-manager",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/images/task-manager.png",
-      video: "",
-    },
-    {
       title: "Battleship",
-      href: "https://gda0.github.io/battleship",
+      href: "https://gideonadeti.github.io/battleship",
       dates: "May 2024 - Jun 2024",
       active: true,
       description:
-        "Battleship is a web-based implementation of the classic Battleship game, built as part of The Odin Project curriculum to practice Test-Driven Development (TDD) and complex DOM manipulation. The project follows a TDD workflow using Jest (configured with Babel for ES6 module support), with comprehensive unit tests written to validate game logic and the computer opponent’s behavior.",
+        "Battleship is a web-based implementation of the classic Battleship game built with vanilla JavaScript, SCSS, and Bootstrap. Originally developed as part of The Odin Project curriculum to practice Test-Driven Development (TDD) and complex DOM manipulation, I expanded it with enhanced gameplay features, intelligent AI, and polished user experience to demonstrate my ability to build engaging, interactive web applications with comprehensive testing.",
       technologies: ["JavaScript", "Jest", "Bootstrap", "Sass", "HTML", "CSS"],
       links: [
         {
           type: "Website",
-          href: "https://gda0.github.io/battleship",
+          href: "https://gideonadeti.github.io/battleship",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -349,7 +368,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/images/battleship.jpeg",
+      image: "/images/battleship.png",
       video: "",
     },
   ],
