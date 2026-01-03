@@ -219,7 +219,6 @@ export const DATA = {
         "MongoDB",
         "Prisma ORM",
         "Redis",
-        "Amazon S3",
         "Cloudinary",
         "Next.js",
         "TanStack Query",
