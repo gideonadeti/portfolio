@@ -10,7 +10,7 @@ export const DATA = {
   description: "Full-Stack Software Engineer",
   summary:
     "I'm a Full-Stack Software Engineer with experience in designing, developing, deploying, and maintaining web, mobile, desktop, and machine learning applications.",
-  avatarUrl: "",
+  avatarUrl: "https://res.cloudinary.com/ds1z7r1u8/image/upload/v1772229538/IMG-20260221-WA02011_ra4cyf.jpg",
   skills: [
     "Web Applications",
     "Mobile Applications",
