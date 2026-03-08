@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { FolderKanbanIcon, HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Gideon Adeti",
@@ -20,7 +20,6 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/projects", icon: FolderKanbanIcon, label: "Projects" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
@@ -45,7 +44,18 @@ export const DATA = {
         name: "X",
         url: "https://x.com/gideonadeti0",
         icon: Icons.x,
-
+        navbar: true,
+      },
+      YouTube: {
+        name: "YouTube",
+        url: "https://youtube.com/@gideonadeti",
+        icon: Icons.youtube,
+        navbar: true,
+      },
+      Instagram: {
+        name: "Instagram",
+        url: "https://instagram.com/gideonadeti0",
+        icon: Icons.instagram,
         navbar: true,
       },
     },
