@@ -11,6 +11,7 @@ import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
+import { ArrowRightIcon } from "lucide-react";
 import { AvatarDialog } from "@/components/avatar-dialog";
 
 const BLUR_FADE_DELAY = 0.02;
@@ -145,7 +146,7 @@ export default function Page() {
               </div>
             </BlurFade>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-              {DATA.projects.map((project, id) => (
+              {DATA.projects.slice(0, 2).map((project, id) => (
                 <BlurFade
                   key={project.title}
                   delay={BLUR_FADE_DELAY * 12 + id * 0.05}
@@ -164,6 +165,17 @@ export default function Page() {
                 </BlurFade>
               ))}
             </div>
+            <BlurFade delay={BLUR_FADE_DELAY * 12.2}>
+              <div className="flex justify-center mt-8">
+                <Link
+                  href="/projects"
+                  className="text-primary font-medium inline-flex items-center gap-1.5 transition-opacity duration-200 hover:opacity-80 group"
+                >
+                  View all projects
+                  <ArrowRightIcon className="size-4 transition-transform duration-200 group-hover:translate-x-0.5" />
+                </Link>
+              </div>
+            </BlurFade>
           </div>
         </section>
         <section id="contact">
