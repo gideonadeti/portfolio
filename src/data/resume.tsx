@@ -20,7 +20,11 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    {
+      href: "https://gideonadeti.blogspot.com/",
+      icon: NotebookIcon,
+      label: "Blog",
+    },
   ],
   contact: {
     email: "gideonadeti0@gmail.com",
