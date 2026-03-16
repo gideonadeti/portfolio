@@ -21,7 +21,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     {
-      href: "https://gideonadeti.blogspot.com/",
+      href: "https://gideondadeti.blogspot.com",
       icon: NotebookIcon,
       label: "Blog",
     },
