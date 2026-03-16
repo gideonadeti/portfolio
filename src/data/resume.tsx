@@ -9,8 +9,9 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/Accra",
   description: "Full-Stack Software Engineer",
   summary:
-    "I'm a Full-Stack Software Engineer with experience in designing, developing, deploying, and maintaining web, mobile, desktop, and machine learning applications.",
-  avatarUrl: "https://res.cloudinary.com/ds1z7r1u8/image/upload/v1772718406/IMG-20260221-WA020111_n4pih9.jpg",
+    "I'm a Full-Stack Software Engineer with experience in designing, developing, deploying, and maintaining web, mobile, desktop, and machine learning applications. I'm also an aspiring neuroengineer.",
+  avatarUrl:
+    "https://res.cloudinary.com/ds1z7r1u8/image/upload/v1772718406/IMG-20260221-WA020111_n4pih9.jpg",
   skills: [
     "Web Applications",
     "Mobile Applications",
@@ -19,7 +20,11 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    {
+      href: "https://gideondadeti.blogspot.com",
+      icon: NotebookIcon,
+      label: "Blog",
+    },
   ],
   contact: {
     email: "gideonadeti0@gmail.com",
@@ -43,7 +48,18 @@ export const DATA = {
         name: "X",
         url: "https://x.com/gideonadeti0",
         icon: Icons.x,
-
+        navbar: true,
+      },
+      YouTube: {
+        name: "YouTube",
+        url: "https://youtube.com/@gideonadeti",
+        icon: Icons.youtube,
+        navbar: true,
+      },
+      Instagram: {
+        name: "Instagram",
+        url: "https://instagram.com/gideonadeti0",
+        icon: Icons.instagram,
         navbar: true,
       },
     },
@@ -88,28 +104,12 @@ export const DATA = {
   ],
   education: [
     {
-      school: "Developer Roadmaps",
-      href: "https://roadmap.sh",
-      degree: "Software Engineering",
-      logoUrl: "/developer-roadmaps.png",
-      start: "Sep 2024",
-      end: "Dec 2024",
-    },
-    {
-      school: "The Odin Project",
-      href: "https://theodinproject.com",
-      degree: "Web Development",
-      logoUrl: "/top.png",
-      start: "May 2024",
-      end: "Aug 2024",
-    },
-    {
-      school: "freeCodeCamp",
-      href: "https://freecodecamp.org",
-      degree: "Full-Stack Development",
-      logoUrl: "/fcc.png",
-      start: "Jan 2024",
-      end: "Apr 2024",
+      school: "Accra Technical University",
+      href: "https://atu.edu.gh",
+      degree: "Bachelor of Technology, Electrical and Electronics Engineering",
+      logoUrl: "/atu.png",
+      start: "Jan 2026",
+      end: "Aug 2029",
     },
   ],
   projects: [
