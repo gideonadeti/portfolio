@@ -128,7 +128,7 @@ export const DATA = {
         "Redis",
         "Docker",
         "Docker Compose",
-        "Digital Ocean Droplet",
+        "Digital Ocean",
         "Coolify",
         "Next.js",
         "Shadcn UI",
