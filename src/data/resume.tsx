@@ -114,12 +114,45 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "QuizRank",
+      href: "https://playquizrank.com",
+      dates: "Dec 2025 - Present",
+      active: true,
+      description:
+        "A freemium edutainment web app that allows users to test their knowledge through customizable trivia quizzes and compete on a real-time global leaderboard.",
+      technologies: [
+        "TypeScript",
+        "NestJS",
+        "PostgreSQL",
+        "Prisma ORM",
+        "Redis",
+        "Docker",
+        "Docker Compose",
+        "Digital Ocean Droplet",
+        "Coolify",
+        "Next.js",
+        "Shadcn UI",
+        "Tailwind CSS",
+        "TanStack Query",
+        "Axios",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://playquizrank.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/images/quizrank.jpeg",
+      video: "",
+    },
+    {
       title: "REEN",
       href: "https://github.com/gideonadeti/reen-backend",
       dates: "May 2025 - Jul 2025",
       active: false,
       description:
-        "REEN is an e-commerce platform where users can buy, sell, and manage their products. It’s inspired by one of the advanced projects from the Backend roadmap on Developer Roadmaps. I built it to strengthen my backend development skills with NestJS and to demonstrate my ability to engineer sophisticated, modern full-stack applications with a robust backend architecture and an intuitive frontend.",
+        "REEN is an e-commerce platform where users can buy, sell, and manage their products. It's inspired by one of the advanced projects from the Backend roadmap on Developer Roadmaps. I built it to strengthen my backend development skills with NestJS and to demonstrate my ability to engineer sophisticated, modern full-stack applications with a robust backend architecture and an intuitive frontend.",
       technologies: [
         "TypeScript",
         "NestJS",
