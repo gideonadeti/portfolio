@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { BlogDate } from "@/components/blog-date";
 import { getBlogPosts, getPost } from "@/data/blog";
 import { DATA } from "@/data/resume";
@@ -6,6 +7,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+
+function imageUrl(image: string | undefined): string | undefined {
+  if (!image) return undefined;
+  if (image.startsWith("http://") || image.startsWith("https://")) return image;
+  return `${DATA.url}${image}`;
+}
 
 export async function generateStaticParams() {
   const posts = await getBlogPosts();
@@ -39,7 +46,7 @@ export async function generateMetadata({
       publishedTime,
       url: `${DATA.url}/blog/${post.slug}`,
       ...(image && {
-        images: [{ url: `${DATA.url}${image}` }],
+        images: [{ url: imageUrl(image)! }],
       }),
     },
     twitter: {
@@ -47,7 +54,7 @@ export async function generateMetadata({
       title,
       description,
       ...(image && {
-        images: [`${DATA.url}${image}`],
+        images: [imageUrl(image)!],
       }),
     },
   };
@@ -87,9 +94,7 @@ export default async function Blog({
     datePublished: post.metadata.publishedAt,
     dateModified: post.metadata.publishedAt,
     description: post.metadata.summary,
-    image: post.metadata.image
-      ? `${DATA.url}${post.metadata.image}`
-      : `${DATA.url}/og?title=${post.metadata.title}`,
+    image: imageUrl(post.metadata.image) ?? `${DATA.url}/og?title=${post.metadata.title}`,
     url: `${DATA.url}/blog/${post.slug}`,
     author: {
       "@type": "Person",
@@ -124,6 +129,19 @@ export default async function Blog({
           </p>
         </Suspense>
       </div>
+
+      {post.metadata.image && (
+        <div className="relative w-full aspect-[800/192] rounded-lg overflow-hidden my-6">
+          <Image
+            src={imageUrl(post.metadata.image)!}
+            alt={post.metadata.title}
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+      )}
+
       <div className="my-6 flex w-full items-center">
         <div
           className="flex-1 h-px bg-border"
