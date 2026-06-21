@@ -66,3 +66,25 @@ async function getAllPosts(dir: string) {
 export async function getBlogPosts() {
   return getAllPosts(path.join(process.cwd(), "content"));
 }
+
+export async function getBlogPostMetadatas(): Promise<
+  Array<{ metadata: Metadata; slug: string }>
+> {
+  const dir = path.join(process.cwd(), "content");
+  const mdxFiles = getMDXFiles(dir);
+  return mdxFiles
+    .map((file) => {
+      const slug = path.basename(file, path.extname(file));
+      const filePath = path.join(dir, file);
+      const source = fs.readFileSync(filePath, "utf-8");
+      const { data: metadata } = matter(source);
+      return { metadata: metadata as Metadata, slug };
+    })
+    .sort((a, b) => {
+      const dateA = new Date(a.metadata.publishedAt).getTime();
+      const dateB = new Date(b.metadata.publishedAt).getTime();
+      if (dateA > dateB) return -1;
+      if (dateA < dateB) return 1;
+      return a.metadata.title.localeCompare(b.metadata.title);
+    });
+}

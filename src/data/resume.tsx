@@ -7,9 +7,9 @@ export const DATA = {
   url: "https://gideonadeti.vercel.app",
   location: "Accra, Greater Accra Region, Ghana",
   locationLink: "https://www.google.com/maps/place/Accra",
-  description: "Full-Stack Software Engineer & Aspiring Neuroengineer",
+  description: "Full-Stack Software Engineer & Efficient Problem Solver",
   summary:
-    "I'm a Full-Stack Software Engineer with experience in designing, developing, deploying, and maintaining web, mobile, desktop, and machine learning applications. I'm also an aspiring neuroengineer.",
+    "I'm a Full-Stack Software Engineer with experience in designing, developing, deploying, and maintaining web, mobile, desktop, and machine learning applications.",
   avatarUrl:
     "https://res.cloudinary.com/ds1z7r1u8/image/upload/v1772718406/IMG-20260221-WA020111_n4pih9.jpg",
   skills: [
@@ -20,11 +20,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    {
-      href: "https://gideondadeti.blogspot.com",
-      icon: NotebookIcon,
-      label: "Blog",
-    },
+    { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "gideonadeti0@gmail.com",
