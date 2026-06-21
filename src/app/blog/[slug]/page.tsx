@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { BlogDate } from "@/components/blog-date";
-import { getBlogPosts, getPost } from "@/data/blog";
+import { getBlogPostMetadatas, getPost } from "@/data/blog";
 import { DATA } from "@/data/resume";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -15,7 +15,7 @@ function imageUrl(image: string | undefined): string | undefined {
 }
 
 export async function generateStaticParams() {
-  const posts = await getBlogPosts();
+  const posts = await getBlogPostMetadatas();
   return posts.map((post) => ({ slug: post.slug }));
 }
 
@@ -69,25 +69,22 @@ export default async function Blog({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const allPosts = await getBlogPosts();
-  const sortedPosts = [...allPosts].sort((a, b) => {
-    if (new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)) {
-      return -1;
-    }
-    return 1;
-  });
 
-  const currentIndex = sortedPosts.findIndex((p) => p.slug === slug);
-  const post = sortedPosts[currentIndex];
-
-  if (!post) {
+  let post;
+  try {
+    post = await getPost(slug);
+  } catch {
     notFound();
   }
 
-  const previousPost = currentIndex > 0 ? sortedPosts[currentIndex - 1] : null;
+  const allMetadatas = await getBlogPostMetadatas();
+  const currentIndex = allMetadatas.findIndex((p) => p.slug === slug);
+
+  const previousPost =
+    currentIndex > 0 ? allMetadatas[currentIndex - 1] : null;
   const nextPost =
-    currentIndex < sortedPosts.length - 1
-      ? sortedPosts[currentIndex + 1]
+    currentIndex < allMetadatas.length - 1
+      ? allMetadatas[currentIndex + 1]
       : null;
 
   const jsonLd = JSON.stringify({

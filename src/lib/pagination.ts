@@ -60,14 +60,15 @@ export function getPaginationMeta(
 }
 
 export function normalizePage(page: number | string | undefined, maxPage: number): number {
+  const clamped = Math.max(maxPage, 1);
   if (typeof page === "string") {
     const parsed = parseInt(page, 10);
     if (isNaN(parsed) || parsed < 1) return 1;
-    return Math.min(parsed, maxPage);
+    return Math.min(parsed, clamped);
   }
   if (typeof page === "number") {
     if (page < 1) return 1;
-    return Math.min(page, maxPage);
+    return Math.min(page, clamped);
   }
   return 1;
 }
