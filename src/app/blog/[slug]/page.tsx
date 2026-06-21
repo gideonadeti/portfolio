@@ -94,7 +94,7 @@ export default async function Blog({
     datePublished: post.metadata.publishedAt,
     dateModified: post.metadata.publishedAt,
     description: post.metadata.summary,
-    image: imageUrl(post.metadata.image) ?? `${DATA.url}/og?title=${post.metadata.title}`,
+    image: imageUrl(post.metadata.image) ?? `${DATA.url}/og?title=${encodeURIComponent(post.metadata.title)}`,
     url: `${DATA.url}/blog/${post.slug}`,
     author: {
       "@type": "Person",
