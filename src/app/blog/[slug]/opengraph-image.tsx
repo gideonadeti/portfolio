@@ -149,13 +149,34 @@ export default async function Image({
       ),
       { ...size }
     );
-  } catch (error) {
-    console.error("Error generating OpenGraph image:", error);
-    return new Response(
-      `Failed to generate image: ${
-        error instanceof Error ? error.message : "Unknown error"
-      }`,
-      { status: 500 }
+  } catch {
+    return new ImageResponse(
+      (
+        <div
+          style={{
+            height: "100%",
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            backgroundColor: "#ffffff",
+            padding: "40px",
+          }}
+        >
+          <div
+            style={{
+              height: "100%",
+              width: "100%",
+              display: "flex",
+              alignItems: "flex-end",
+            }}
+          >
+            <div style={{ fontSize: 48, fontWeight: 600, color: "#000000" }}>
+              Post Not Found
+            </div>
+          </div>
+        </div>
+      ),
+      { ...size }
     );
   }
 }

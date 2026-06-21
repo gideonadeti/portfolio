@@ -22,10 +22,11 @@ export default async function BlogPage({
 
   const posts = await getBlogPosts();
   const sortedPosts = [...posts].sort((a, b) => {
-    if (new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)) {
-      return -1;
-    }
-    return 1;
+    const dateA = new Date(a.metadata.publishedAt).getTime();
+    const dateB = new Date(b.metadata.publishedAt).getTime();
+    if (dateA > dateB) return -1;
+    if (dateA < dateB) return 1;
+    return a.metadata.title.localeCompare(b.metadata.title);
   });
 
   const totalPages = Math.ceil(sortedPosts.length / PAGE_SIZE);

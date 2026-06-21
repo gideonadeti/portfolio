@@ -24,10 +24,13 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata | undefined> {
-  const { slug } = await params;
-  let post = await getPost(slug);
-
-  if (!post) return undefined;
+  let post;
+  try {
+    const { slug } = await params;
+    post = await getPost(slug);
+  } catch {
+    return undefined;
+  }
 
   let {
     title,

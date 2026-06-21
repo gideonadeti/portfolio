@@ -20,6 +20,7 @@ export function paginate<T>(
   options: PaginationOptions
 ): PaginationResult<T> {
   const { page, pageSize } = options;
+  if (pageSize <= 0) throw new Error("pageSize must be positive");
   const totalItems = items.length;
   const totalPages = Math.ceil(totalItems / pageSize);
   const startIndex = (page - 1) * pageSize;
@@ -45,6 +46,7 @@ export function getPaginationMeta(
   options: PaginationOptions
 ) {
   const { page, pageSize } = options;
+  if (pageSize <= 0) throw new Error("pageSize must be positive");
   const totalPages = Math.ceil(totalItems / pageSize);
 
   return {
