@@ -1,7 +1,11 @@
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypeExternalLinks from "rehype-external-links";
 import rehypePrettyCode from "rehype-pretty-code";
+import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
+import rehypeSlug from "rehype-slug";
 import rehypeStringify from "rehype-stringify";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
@@ -23,12 +27,62 @@ export async function markdownToHTML(markdown: string) {
     .use(remarkParse)
     .use(remarkRehype)
     .use(rehypePrettyCode, {
-      // https://rehype-pretty.pages.dev/#usage
       theme: {
         light: "min-light",
         dark: "min-dark",
       },
       keepBackground: false,
+    })
+    .use(rehypeSlug)
+    .use(
+      rehypeAutolinkHeadings as any,
+      {
+        behavior: "append" as const,
+        properties: {
+          class: "anchor",
+          ariaHidden: true,
+          tabIndex: -1,
+        },
+      },
+    )
+    .use(rehypeExternalLinks as any, {
+      target: "_blank",
+      rel: ["noopener", "noreferrer"],
+    })
+    .use(rehypeSanitize, {
+      ...defaultSchema,
+      attributes: {
+        ...defaultSchema.attributes,
+        a: [
+          ...(defaultSchema.attributes?.a ?? []),
+          ["href"],
+          ["target"],
+          ["rel"],
+          ["ariaHidden"],
+          ["tabIndex"],
+        ],
+        "*": [
+          ...(defaultSchema.attributes?.["*"] ?? []),
+          ["className"],
+          ["id"],
+          ["class"],
+          ["ariaHidden"],
+          ["tabIndex"],
+        ],
+        code: [
+          ...(defaultSchema.attributes?.code ?? []),
+          ["className"],
+          ["data-theme"],
+          ["data-line-numbers"],
+          ["data-line-numbers-max-digits"],
+        ],
+        span: [
+          ...(defaultSchema.attributes?.span ?? []),
+          ["className"],
+          ["data-theme"],
+          ["data-line"],
+        ],
+      },
     })
     .use(rehypeStringify)
     .process(markdown);

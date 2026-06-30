@@ -119,10 +119,43 @@
     @apply inline-block w-4 mr-4 text-right text-gray-500;
   }
  
+  .prose .anchor {
+    @apply invisible absolute no-underline;
+
+    margin-left: -1em;
+    padding-right: 0.5em;
+    width: 80%;
+    max-width: 700px;
+    cursor: pointer;
+  }
+
+  .anchor:hover {
+    @apply visible;
+  }
+
+  .prose h1:hover .anchor,
+  .prose h2:hover .anchor,
+  .prose h3:hover .anchor,
+  .prose h4:hover .anchor,
+  .prose h5:hover .anchor,
+  .prose h6:hover .anchor {
+    @apply visible;
+  }
+
+  .anchor::after {
+    content: "#";
+    @apply text-muted-foreground;
+  }
+
+  .prose a[target="_blank"]::after {
+    content: " ↗";
+    font-size: 0.75em;
+  }
+
   code {
     counter-reset: line;
   }
- 
+  
   code > [data-line]::before {
   counter-increment: line;
   content: counter(line);
