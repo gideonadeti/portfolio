@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { BlogDate } from "@/components/blog-date";
+import { BlogComments } from "@/components/blog/blog-comments";
+import { BlogStats } from "@/components/blog/blog-stats";
 import { getBlogPostMetadatas, getPost } from "@/data/blog";
 import { DATA } from "@/data/resume";
 import type { Metadata } from "next";
@@ -157,6 +159,7 @@ export default async function Blog({
         className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert"
         dangerouslySetInnerHTML={{ __html: post.source }}
       />
+      <BlogStats slug={slug} />
       <nav className="mt-12 pt-8 max-w-2xl">
         <div className="flex flex-col sm:flex-row justify-between gap-4">
           {previousPost ? (
@@ -193,6 +196,7 @@ export default async function Blog({
           )}
         </div>
       </nav>
+      <BlogComments slug={slug} />
     </section>
   );
 }

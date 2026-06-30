@@ -5,8 +5,7 @@ export const DATA = {
   name: "Gideon Adeti",
   initials: "GA",
   url: "https://gideonadeti.vercel.app",
-  location: "Accra, Greater Accra Region, Ghana",
-  locationLink: "https://www.google.com/maps/place/Accra",
+
   description: "Full-Stack Software Engineer & Efficient Problem Solver",
   summary:
     "I'm a Full-Stack Software Engineer with experience in designing, developing, deploying, and maintaining web, mobile, desktop, and machine learning applications.",
