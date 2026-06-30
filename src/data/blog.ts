@@ -4,7 +4,7 @@ import path from "path";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeExternalLinks from "rehype-external-links";
 import rehypePrettyCode from "rehype-pretty-code";
-import rehypeSanitize from "rehype-sanitize";
+import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
 import rehypeSlug from "rehype-slug";
 import rehypeStringify from "rehype-stringify";
 import remarkParse from "remark-parse";
@@ -49,7 +49,41 @@ export async function markdownToHTML(markdown: string) {
       target: "_blank",
       rel: ["noopener", "noreferrer"],
     })
-    .use(rehypeSanitize)
+    .use(rehypeSanitize, {
+      ...defaultSchema,
+      attributes: {
+        ...defaultSchema.attributes,
+        a: [
+          ...(defaultSchema.attributes?.a ?? []),
+          ["href"],
+          ["target"],
+          ["rel"],
+          ["ariaHidden"],
+          ["tabIndex"],
+        ],
+        "*": [
+          ...(defaultSchema.attributes?.["*"] ?? []),
+          ["className"],
+          ["id"],
+          ["class"],
+          ["ariaHidden"],
+          ["tabIndex"],
+        ],
+        code: [
+          ...(defaultSchema.attributes?.code ?? []),
+          ["className"],
+          ["data-theme"],
+          ["data-line-numbers"],
+          ["data-line-numbers-max-digits"],
+        ],
+        span: [
+          ...(defaultSchema.attributes?.span ?? []),
+          ["className"],
+          ["data-theme"],
+          ["data-line"],
+        ],
+      },
+    })
     .use(rehypeStringify)
     .process(markdown);
 

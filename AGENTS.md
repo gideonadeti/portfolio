@@ -30,7 +30,6 @@
 
 ## Gotchas
 
-- `package.json` name is `"porfolio"` (typo — missing second `t`)
 - No test infrastructure exists; adding tests requires a framework from scratch
 - Remote images allowed: `res.cloudinary.com`, `images.unsplash.com`, `sladenfeinstein.com`
 - Adding shadcn/ui components: `npx shadcn@latest add <component>`

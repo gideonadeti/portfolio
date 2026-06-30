@@ -10,12 +10,10 @@ const GISCUS_THEMES: Record<string, string> = {
 
 export function BlogComments({ slug }: { slug: string }) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const mounted = useRef(false);
   const { resolvedTheme } = useTheme();
 
   useEffect(() => {
-    if (mounted.current) return;
-    mounted.current = true;
+    containerRef.current!.innerHTML = "";
 
     const script = document.createElement("script");
     script.src = "https://giscus.app/client.js";
@@ -34,7 +32,7 @@ export function BlogComments({ slug }: { slug: string }) {
     script.setAttribute("crossorigin", "anonymous");
 
     containerRef.current?.appendChild(script);
-  }, []);
+  }, [slug]);
 
   useEffect(() => {
     const theme = GISCUS_THEMES[resolvedTheme ?? ""] ?? "light";

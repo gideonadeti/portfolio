@@ -9,19 +9,21 @@ export function BlogStats({ slug }: { slug: string }) {
   useEffect(() => {
     const viewed = sessionStorage.getItem(`blog:viewed:${slug}`);
     if (!viewed) {
-      sessionStorage.setItem(`blog:viewed:${slug}`, "1");
       fetch(`/api/blog/${slug}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ action: "view" }),
       })
         .then((r) => r.json())
-        .then((s) => setViews(s.views))
+        .then((s) => {
+          sessionStorage.setItem(`blog:viewed:${slug}`, "1");
+          setViews(typeof s.views === "number" ? s.views : 0);
+        })
         .catch(() => {});
     } else {
       fetch(`/api/blog/${slug}`)
         .then((r) => r.json())
-        .then((s) => setViews(s.views))
+        .then((s) => setViews(typeof s.views === "number" ? s.views : 0))
         .catch(() => {});
     }
   }, [slug]);
