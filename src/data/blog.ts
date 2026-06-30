@@ -1,7 +1,11 @@
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypeExternalLinks from "rehype-external-links";
 import rehypePrettyCode from "rehype-pretty-code";
+import rehypeSanitize from "rehype-sanitize";
+import rehypeSlug from "rehype-slug";
 import rehypeStringify from "rehype-stringify";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
@@ -23,13 +27,29 @@ export async function markdownToHTML(markdown: string) {
     .use(remarkParse)
     .use(remarkRehype)
     .use(rehypePrettyCode, {
-      // https://rehype-pretty.pages.dev/#usage
       theme: {
         light: "min-light",
         dark: "min-dark",
       },
       keepBackground: false,
     })
+    .use(rehypeSlug)
+    .use(
+      rehypeAutolinkHeadings as any,
+      {
+        behavior: "append" as const,
+        properties: {
+          class: "anchor",
+          ariaHidden: true,
+          tabIndex: -1,
+        },
+      },
+    )
+    .use(rehypeExternalLinks as any, {
+      target: "_blank",
+      rel: ["noopener", "noreferrer"],
+    })
+    .use(rehypeSanitize)
     .use(rehypeStringify)
     .process(markdown);
 
